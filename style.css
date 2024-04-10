@@ -20,21 +20,22 @@ body {
 }
 
 .parentDiv {
-  width: 80%;
+  width: 100%;
   background-color: var(--darkGrey);
   margin: auto;
   display: grid;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
-  height: 90vh;
+  max-width: 220px;
+  height: 95vh;
+  min-height: 0px;
   position: absolute;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
   border-radius: 8px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .imgDiv {
@@ -43,47 +44,62 @@ body {
 
 .imgDiv img {
   clip-path: circle();
-  max-width: 90px;
-  max-height: 90px;
-  margin: 0px auto;
+  max-width: 60px;
+  max-height: 60px;
+  margin: auto;
   display: block;
 }
 
 .imgDiv h1{
     color: var(--white);
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 
 h3{
     color: var(--green);
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 10px;
     text-align: center;
 }
      p{
         color: var(--white);
-        font-size: 14px;
-        margin-top: 20px;
+        font-size: 10px;
+        margin-top: 15px;
         text-align: center;
     }
 
  .buttonDiv{
     display: grid;
-    margin-top: 12px;
  }   
 
  button{
     color: var(--white);
-    padding: 6px;
+    padding: 7px;
     background-color: var(--grey);
-    border-radius: 8px;
+    border-radius: 6px;
     border: none;
     margin-top: 8px;
+    font-size: 10px;
  }
 
  button:hover{
     background-color: var(--green);
     cursor: pointer;
+ }
+
+ @media screen and (min-width: 1024px){
+  .parentDiv{
+    height: 85vh;
+  }
+ }
+
+ @media screen and (max-width: 375px) {
+  .parentDiv{
+    container-type: inline-size;
+    /* width: fit-content; */
+    /* min-height: 0px; */
+    /* height: 100vh; */
+  }
  }
