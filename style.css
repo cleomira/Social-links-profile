@@ -98,8 +98,5 @@ h3{
  @media screen and (max-width: 375px) {
   .parentDiv{
     container-type: inline-size;
-    /* width: fit-content; */
-    /* min-height: 0px; */
-    /* height: 100vh; */
   }
  }
