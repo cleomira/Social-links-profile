@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 220px;
-  height: 95vh;
+  height: 370px;
   min-height: 0px;
   position: absolute;
   right: 0;
@@ -72,6 +72,7 @@ h3{
 
  .buttonDiv{
     display: grid;
+    margin-top: none;
  }   
 
  button{
@@ -87,16 +88,4 @@ h3{
  button:hover{
     background-color: var(--green);
     cursor: pointer;
- }
-
- @media screen and (min-width: 1024px){
-  .parentDiv{
-    height: 85vh;
-  }
- }
-
- @media screen and (max-width: 375px) {
-  .parentDiv{
-    container-type: inline-size;
-  }
  }
